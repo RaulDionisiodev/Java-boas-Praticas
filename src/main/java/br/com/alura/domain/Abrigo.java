@@ -8,9 +8,20 @@ public class Abrigo {
         this.email = email;
     }
 
+    private Long id;
     private String nome;
     private String telefone;
     private String email;
 
+    public Long getId() {
+        return id;
+    }
 
+    public String getNome() {
+        return nome;
+    }
+    @Override
+    public String toString() {
+        return this.id +" - " + this.nome;
+    }
 }
