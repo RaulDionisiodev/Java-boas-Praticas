@@ -1,7 +1,6 @@
 package br.com.alura.domain;
 
 public class Pet {
-
     private String tipo;
     private String nome;
     private String raca;
@@ -12,6 +11,9 @@ public class Pet {
     private Float peso;
 
     private Long id;
+
+
+    public Pet() {}
 
     public Pet(String tipo, String nome, String raca, int idade, String cor, Float peso) {
         this.tipo = tipo;
@@ -41,6 +43,14 @@ public class Pet {
 
     public int getIdade() {
         return idade;
+    }
+
+    public Float getPeso() {
+        return peso;
+    }
+
+    public String getCor() {
+        return cor;
     }
 
     @Override
